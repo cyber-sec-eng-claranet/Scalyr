@@ -9,7 +9,7 @@ function Install-Scalyr {
 
     $msiUrl       = "https://app.scalyr.com/scalyr-repo/stable/latest/ScalyrAgentInstaller-2.2.18.msi"
     $msiPath      = "$env:TEMP\ScalyrAgentInstaller.msi"
-    $configUrl    = "https://raw.githubusercontent.com/charleshewish/Scalyr/refs/heads/Windows/$ConfigFile"
+    $configUrl    = "https://raw.githubusercontent.com/cyber-sec-eng-claranet/Scalyr/refs/heads/Windows/$ConfigFile"
     $configPath   = "C:\Program Files (x86)\Scalyr\config\agent.json"
     $serviceName  = "Scalyr Agent Service"
     
