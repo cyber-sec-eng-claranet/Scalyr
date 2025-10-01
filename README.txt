@@ -1,0 +1,1 @@
+This repo is designed to be used with scalyr agent installs
