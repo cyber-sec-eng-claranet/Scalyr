@@ -14,7 +14,7 @@ API_KEY="$1"
 CONFIG_FILE="$2"
 
 # ===== CONSTANTS =====
-REPO_BASE="https://raw.githubusercontent.com/charleshewish/Scalyr/refs/heads/Linux"
+REPO_BASE="https://raw.githubusercontent.com/cyber-sec-eng-claranet/Scalyr/refs/heads/Linux"
 CONFIG_URL="${REPO_BASE}/${CONFIG_FILE}"
 CONFIG_PATH="/etc/scalyr-agent-2/agent.json"
 
