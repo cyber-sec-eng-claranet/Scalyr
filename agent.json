@@ -15,6 +15,9 @@
     "/var/log/ufw.log",
     "/var/log/cloud-init.log",
     "/var/log/scalyr-agent-2/agent.log"
+    "/var/log/secure"
+    "/var/log/auth.log"
+    "/var/log/messages"
   ],
   "monitors": [
     {
@@ -36,6 +39,7 @@
   "implicit_agent_process_metrics_monitor": true
 
 }
+
 
 
 
