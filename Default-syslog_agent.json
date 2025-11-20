@@ -1,0 +1,44 @@
+{
+  "api_key": "API_KEY_PLACEHOLDER",
+  "scalyr_server": "https://xdr.eu1.sentinelone.net",
+
+  "server_attributes": {
+  },
+  "log_paths": [
+    "/var/log/syslog",
+    "/var/log/auth.log",
+    "/var/log/kern.log",
+    "/var/log/dmesg",
+    "/var/log/apt/history.log",
+    "/var/log/apt/term.log",
+    "/var/log/faillog",
+    "/var/log/ufw.log",
+    "/var/log/cloud-init.log",
+    "/var/log/scalyr-agent-2/agent.log"
+    "/var/log/secure"
+    "/var/log/messages"
+  ],
+  "monitors": [
+    {
+      module: "scalyr_agent.builtin_monitors.syslog_monitor",
+      protocols: "tcp:601, udp:514",
+      accept_remote_connections: true,
+      message_log: "locallog.log", 
+      parser: "parser_name"      
+    },
+  ],
+
+  "sampling_rules": [
+    {
+      "match_expression": ".*",
+      "sampling_rate": 1.0
+    }
+  ],
+  "implicit_metric_monitor": true,
+  "implicit_agent_process_metrics_monitor": true
+
+}
+
+
+
+
