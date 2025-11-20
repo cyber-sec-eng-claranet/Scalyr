@@ -16,17 +16,9 @@
     "/var/log/cloud-init.log",
     "/var/log/scalyr-agent-2/agent.log"
     "/var/log/secure"
-    "/var/log/auth.log"
     "/var/log/messages"
   ],
   "monitors": [
-    {
-      module: "scalyr_agent.builtin_monitors.syslog_monitor",
-      protocols: "tcp:601, udp:514",
-      accept_remote_connections: true,
-      message_log: "nxlogs.log", 
-      parser: "scalyr_agent.builtin_monitors.windows_event_log_monitor"      
-    },
   ],
 
   "sampling_rules": [
@@ -39,6 +31,7 @@
   "implicit_agent_process_metrics_monitor": true
 
 }
+
 
 
 
