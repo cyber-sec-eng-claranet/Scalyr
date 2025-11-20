@@ -5,7 +5,6 @@
   }
 
 logs: [
-    { path: "C:\\Users\\SOCAdmin\\Documents\\AISIEM\\Watchguard\\WatchguardLogs.txt", attributes: {parser: "TestParser"} },
     { path: "C:\\Windows\\System32\\LogFiles\\DNS\\dns.log", attributes: {parser: "DNSLog"} }
 ]
 
@@ -31,5 +30,6 @@ monitors: [
      }
 ]
 }
+
 
 
