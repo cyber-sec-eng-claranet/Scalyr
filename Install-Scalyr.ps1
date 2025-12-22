@@ -23,7 +23,7 @@ function Install-Scalyr {
         Write-Host "[INFO] Scalyr Agent already installed. Skipping MSI installation."
     }
 
-    Fetch config file from GitHub
+   # Fetch config file from GitHub
     Write-Host "[INFO] Fetching config $ConfigFile from GitHub..."
     $config = Invoke-WebRequest -Uri $configUrl | Select-Object -ExpandProperty Content
     $config = $config -replace 'API_KEY_PLACEHOLDER', $ApiKey
