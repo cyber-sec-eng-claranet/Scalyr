@@ -1,0 +1,45 @@
+{
+  api_key: "API_KEY_PLACEHOLDER",
+"scalyr_server": "https://xdr.eu1.sentinelone.net",
+  server_attributes: {
+  }
+
+logs: [
+]
+
+
+monitors: [
+  {
+    module: "scalyr_agent.builtin_monitors.windows_event_log_monitor",
+    channels: [
+        { "channel": [ "Application", "Security", "System" ],
+          "query": "*[System/Level=0 or System/Level=1 or System/Level=2 or System/Level=3 or System/Level=4]"
+        }
+    ]
+  },
+{
+          module: "scalyr_agent.builtin_monitors.shell_monitor",
+          id: "cmd",
+          command: "powershell -command \"" + 
+                   "Get-Process" 
+                                         + "\""
+          log_all_lines: "True"
+          max_characters: "10000"
+          sample_interval: 60
+     },
+ {
+ module: "scalyr_agent.builtin_monitors.syslog_monitor",
+ protocols: "tcp:601, udp:514",
+ accept_remote_connections: true,
+ message_log: "Wifi.log, 
+ parser: wifiDevicesParser" 
+ },
+    {
+ module: "scalyr_agent.builtin_monitors.syslog_monitor",
+ protocols: "tcp:602, udp:515",
+ accept_remote_connections: true,
+ message_log: "firewall.log, 
+ parser: firewall_parser" 
+ }
+]
+}
