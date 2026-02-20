@@ -8,13 +8,13 @@
 #   sudo bash Install-Scalyr.sh --api-token "YOUR_API_KEY" --config-file "Agent1.json"
 #
 # One-liner:
-#   curl -sO https://raw.githubusercontent.com/charleshewish/Scalyr/refs/heads/Linux/Install-Scalyr.sh && sudo bash Install-Scalyr.sh --api-token "YOUR_API_KEY" --config-file "Agent1.json"
+#   curl -sO https://raw.githubusercontent.com/cyber-sec-eng-claranet/Scalyr/refs/heads/Linux/Install-Scalyr.sh && sudo bash Install-Scalyr.sh --api-token "YOUR_API_KEY" --config-file "Agent1.json"
 # =============================================================================
 
 set -euo pipefail
 
 # ─── CONFIGURATION ────────────────────────────────────────────────────────────
-GITHUB_RAW_BASE="https://raw.githubusercontent.com/charleshewish/Scalyr/refs/heads/Linux"
+GITHUB_RAW_BASE="https://raw.githubusercontent.com/cyber-sec-eng-claranet/Scalyr/refs/heads/Linux"
 AGENT_CONFIG_PATH="/etc/scalyr-agent-2/agent.json"
 API_PLACEHOLDER="API_KEY_PLACEHOLDER"
 TEMP_DIR=$(mktemp -d)
