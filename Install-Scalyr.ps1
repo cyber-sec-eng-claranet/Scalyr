@@ -10,7 +10,7 @@
     The name of the agent config file to download from GitHub (e.g. Agent1.json).
 
 .EXAMPLE
-    powershell -ExecutionPolicy Bypass -Command "iwr -useb 'https://raw.githubusercontent.com/cyber-sec-eng-claranet/Scalyr/refs/heads/Windows/Install-Scalyr.ps1' | iex" -ApiToken "abc123" -ConfigFile "Agent1.json"
+    powershell -ExecutionPolicy Bypass -Command "& ([scriptblock]::Create((irm 'https://raw.githubusercontent.com/cyber-sec-eng-claranet/Scalyr/refs/heads/Windows/Install-Scalyr.ps1'))) -ApiToken 'YOUR_API_KEY' -ConfigFile 'CONFIG_NAME.json'"
 #>
 
 param(
