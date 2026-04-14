@@ -6,6 +6,7 @@
 
 logs: [
     { path: "C:\\Windows\\System32\\LogFiles\\DNS\\dns.log", attributes: {parser: "DNSLog"} }
+    { path: "C:\\Windows\\System32\\dhcp\\DhcpSrvLog-*.log", attributes: {parser: "DHCPLog"} }
 ]
 
 
