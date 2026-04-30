@@ -1,0 +1,16 @@
+{
+  api_key: "API_KEY_PLACEHOLDER",
+"scalyr_server": "https://xdr.eu1.sentinelone.net",
+  server_attributes: {
+  }
+
+logs: [
+    { path: "C:\\Windows\\System32\\LogFiles\\DNS\\dns.log", attributes: {parser: "DNSLog"} }
+]
+
+
+monitors: [
+]
+}
+
+
