@@ -24,7 +24,7 @@ param(
 $ErrorActionPreference = "Stop"
 
 # ─── CONFIGURATION ────────────────────────────────────────────────────────────
-$MsiUrl         = "https://app.scalyr.com/scalyr-repo/stable/latest/ScalyrAgentInstaller-2.2.18.msi"
+$MsiUrl         = "https://app.scalyr.com/scalyr-repo/stable/latest/ScalyrAgentInstaller-2.2.21.msi"
 $GitHubRawBase  = "https://raw.githubusercontent.com/cyber-sec-eng-claranet/Scalyr/refs/heads/Windows"
 $AgentConfigDir = "C:\Program Files (x86)\Scalyr\config"
 $AgentConfigDst = Join-Path $AgentConfigDir "agent.json"
