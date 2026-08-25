@@ -30,7 +30,14 @@
       module: "scalyr_agent.builtin_monitors.syslog_monitor",
       protocols: "tcp:601",
       accept_remote_connections: true,
-      message_log: "ZscalerLogs.log", 
+      message_log: "ZscalerZIALogs.log", 
+      parser: "marketplace-zscalerinternetaccess-latest"      
+    },
+    {
+      module: "scalyr_agent.builtin_monitors.syslog_monitor",
+      protocols: "tcp:6514",
+      accept_remote_connections: true,
+      message_log: "ZscalerZPALogs.log", 
       parser: "marketplace-zscalerprivateaccess-latest"      
     }
   ],
