@@ -16,7 +16,7 @@
     "/var/log/cloud-init.log",
     "/var/log/scalyr-agent-2/agent.log",
     "/var/log/secure",
-    "/var/log/messages",
+    "/var/log/messages"
   ],
   "monitors": [
     {
