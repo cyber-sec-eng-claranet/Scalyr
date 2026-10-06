@@ -21,7 +21,7 @@
 {"path": "/var/log/qualys/logins.log", "attributes": {"parser": "qualys-logins", "source": "qualys"} },
 { "path": "/var/log/imperva/waf.log", "attributes": {"parser": "imperva-waf", "source": "imperva"} }, 
 { "path": "/var/log/imperva/audit.log", "attributes": {"parser": "imperva-audit", "source": "imperva"} }
-]
+],
   "monitors": [
     {
       module: "scalyr_agent.builtin_monitors.syslog_monitor",
